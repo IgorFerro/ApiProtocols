@@ -1,0 +1,7 @@
+The model layer in a Spring Boot application represents the data structures or domain objects that are used to interact with external systems (e.g., APIs, databases) or to encapsulate the application's business logic. In this project, the model layer is used to map the data returned by the SpaceX GraphQL API into Java objects.
+
+Purpose of the Model Layer
+Data Representation: The model layer defines the structure of the data that the application works with. For example, the Launch class represents a SpaceX launch, including its mission name, launch date, rocket details, etc.
+Mapping API Responses: The model classes are used to deserialize the JSON responses from the SpaceX GraphQL API into Java objects. This is done using libraries like Jackson (which is included in Spring Boot by default).
+Encapsulation: The model layer encapsulates the data and provides a clean way to interact with it through getters and setters (or directly through Lombok annotations).
+Reusability: The model classes can be reused across different parts of the application, such as the service layer, controller layer, and tests.
