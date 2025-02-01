@@ -2,7 +2,7 @@ server:
   port: 8080
 
 spacex:
-  api-url: https://api.spacex.land/graphql/
+  api-url: http://api.spacexdata.com/v3/
 
 logging:
   level:
