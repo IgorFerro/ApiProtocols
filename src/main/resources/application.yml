@@ -1,0 +1,9 @@
+server:
+  port: 8080
+
+spacex:
+  api-url: https://api.spacex.land/graphql/
+
+logging:
+  level:
+    com.example.spacex: DEBUG
