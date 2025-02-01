@@ -1,0 +1,49 @@
+The SpaceXConfig.java class is a configuration class in the project.
+It is used to store and manage configuration properties related to the SpaceX GraphQL API, such as the API's base URL.
+This class is annotated with Spring Boot's @Configuration and @ConfigurationProperties annotations, which allow it to act as a centralized place for managing externalized configuration.
+
+can you explain about
+SpaceXConfig.java
+
+RouteLLM
+Routing to GPT-4o
+Explanation of SpaceXConfig.java
+The SpaceXConfig.java class is a configuration class in the project. It is used to store and manage configuration properties related to the SpaceX GraphQL API, such as the API's base URL. This class is annotated with Spring Boot's @Configuration and @ConfigurationProperties annotations, which allow it to act as a centralized place for managing externalized configuration.
+
+Code Breakdown
+java
+Copy Code
+// src/main/java/com/example/spacex/config/SpaceXConfig.java
+package com.example.spacex.config;
+
+import lombok.Data;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ConfigurationProperties(prefix = "spacex")
+@Data
+public class SpaceXConfig {
+    private String apiUrl = "https://api.spacex.land/graphql/";
+}
+Key Components of the Class
+1. @Configuration Annotation
+Marks the class as a Spring configuration class.
+This tells Spring that this class contains beans or configuration properties that should be managed by the Spring container.
+In this case, the SpaceXConfig class is used to manage configuration properties for the SpaceX API.
+2. @ConfigurationProperties(prefix = "spacex") Annotation
+Binds the properties defined in the application.yml or application.properties file with the prefix spacex to the fields in this class.
+For example, if the application.yml file contains:
+yaml
+Copy Code
+spacex:
+  api-url: https://api.spacex.land/graphql/
+The apiUrl field in the SpaceXConfig class will automatically be populated with the value https://api.spacex.land/graphql/.
+3. Lombok's @Data Annotation
+The @Data annotation from Lombok automatically generates:
+Getters and setters for the apiUrl field.
+toString(), equals(), and hashCode() methods.
+This reduces boilerplate code and makes the class cleaner and easier to maintain.
+4. apiUrl Field
+This field stores the base URL of the SpaceX GraphQL API.
+It is initialized with a default value (https://api.spacex.land/graphql/) in case the property is not explicitly defined in the application.yml or application.properties file.
