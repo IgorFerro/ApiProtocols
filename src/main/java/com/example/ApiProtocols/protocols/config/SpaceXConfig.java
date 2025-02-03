@@ -1,4 +1,4 @@
-package com.example.ApiProtocols.spacex.config;
+package com.example.ApiProtocols.protocols.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

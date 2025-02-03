@@ -1,7 +1,7 @@
-package com.example.ApiProtocols.spacex.controller;
+package com.example.ApiProtocols.protocols.controller;
 
-import com.example.ApiProtocols.spacex.model.Launch;
-import com.example.ApiProtocols.spacex.service.SpaceXService;
+import com.example.ApiProtocols.protocols.model.Launch;
+import com.example.ApiProtocols.protocols.service.SpaceXService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

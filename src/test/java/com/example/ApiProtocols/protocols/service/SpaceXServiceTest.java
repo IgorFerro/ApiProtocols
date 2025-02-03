@@ -1,14 +1,12 @@
-package com.example.ApiProtocols.spacex.service;
+package com.example.ApiProtocols.protocols.service;
 
-import com.example.ApiProtocols.spacex.config.SpaceXConfig;
-import com.example.ApiProtocols.spacex.model.Launch;
+import com.example.ApiProtocols.protocols.model.Launch;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 public class SpaceXServiceTest {

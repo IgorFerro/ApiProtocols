@@ -1,7 +1,7 @@
-package com.example.ApiProtocols.spacex.service;
+package com.example.ApiProtocols.protocols.service;
 
-import com.example.ApiProtocols.spacex.config.SpaceXConfig;
-import com.example.ApiProtocols.spacex.model.Launch;
+import com.example.ApiProtocols.protocols.config.SpaceXConfig;
+import com.example.ApiProtocols.protocols.model.Launch;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import lombok.RequiredArgsConstructor;

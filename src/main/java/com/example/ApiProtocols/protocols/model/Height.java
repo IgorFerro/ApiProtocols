@@ -1,4 +1,4 @@
-package com.example.ApiProtocols.spacex.model;
+package com.example.ApiProtocols.protocols.model;
 
 import lombok.Data;
 
