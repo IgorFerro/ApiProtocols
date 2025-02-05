@@ -1,6 +1,6 @@
 package com.example.ApiProtocols.protocols.service.Soap;
 
-import com.example.ApiProtocols.protocols.model.soap.CountryFlagRequest
+import com.example.ApiProtocols.protocols.model.soap.CountryFlagRequest;
 import com.example.ApiProtocols.protocols.model.soap.CountryFlagResponse;
 import lombok.extern.slf4j.Slf4j;
 import lombok.RequiredArgsConstructor;
